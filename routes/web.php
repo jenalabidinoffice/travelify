@@ -11,8 +11,10 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
-
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/details', 'DetailsController@index')->name('details');
+Route::get('/checkout', 'CheckoutController@index')->name('checkout');
+Route::get('/checkout/success', 'CheckoutController@success')->name('checkout-success');
 
 Route::prefix('admin')
     ->namespace('Admin')

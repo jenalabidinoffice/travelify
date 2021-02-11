@@ -1,50 +1,34 @@
- <!-- Topbar -->
- <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-     <!-- Sidebar Toggle (Topbar) -->
-     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-         <i class="fa fa-bars"></i>
-     </button>
-
-     <!-- Topbar Navbar -->
-     <ul class="navbar-nav ml-auto">
-
-         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-         <li class="nav-item dropdown no-arrow d-sm-none">
-             <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 <i class="fas fa-search fa-fw"></i>
-             </a>
-             <!-- Dropdown - Messages -->
-             <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
-                 <form class="form-inline mr-auto w-100 navbar-search">
-                     <div class="input-group">
-                         <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                         <div class="input-group-append">
-                             <button class="btn btn-primary" type="button">
-                                 <i class="fas fa-search fa-sm"></i>
-                             </button>
-                         </div>
-                     </div>
-                 </form>
-             </div>
-         </li>
-
-         <!-- Nav Item - User Information -->
-         <li class="nav-item dropdown no-arrow">
-             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                 <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
-             </a>
-             <!-- Dropdown - User Information -->
-             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                     Logout
-                 </a>
-             </div>
-         </li>
-
-     </ul>
-
- </nav>
- <!-- End of Topbar -->
+<nav class="navbar navbar-expand-lg navbar-light container">
+    <a class="navbar-brand" href="#">
+        <img src="../frontend/images/logo.png" alt="" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Explore</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Testimonial</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <a href="#" class="btn btn-sign-in px-4"> Sign in</a>
+</nav>
