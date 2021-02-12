@@ -30,5 +30,17 @@
             </li>
         </ul>
     </div>
-    <a href="#" class="btn btn-sign-in px-4"> Sign in</a>
+    @guest
+    <form action="">
+        <button href="#" class="btn btn-sign-in px-4" type="button"
+            onclick="event.preventDefault(); location.href='{{ url('login')}}';"> Sign in</button>
+    </form>
+    @endguest
+
+    @auth
+    <form action="{{ url('logout') }}" method="POST">
+        @csrf
+        <button class="btn btn-sign-in px-4" type="submit"> Sign Out</button>
+    </form>
+    @endauth
 </nav>
