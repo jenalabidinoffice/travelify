@@ -70,20 +70,20 @@ class CheckoutController extends Controller
 
         $item->delete();
 
-        return redirect()->route('checkout', $item->transaction_id);
+        return redirect()->route('checkout', $item->transactions_id);
     }
 
 
     public function create(request $request, $id)
     {
         $request->validate([
-            'username' => 'required|string|exist:users,username',
+            'username' => 'required|string|exists:users,username',
             'is_visa' => 'required|boolean',
             'doe_passport' => 'required'
         ]);
 
         $data = $request->all();
-        $data['transaction_id'] = $id;
+        $data['transactions_id'] = $id;
 
         TransactionDetail::create($data);
 

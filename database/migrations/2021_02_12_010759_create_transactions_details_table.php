@@ -3,9 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use League\CommonMark\Extension\Table\Table;
 
-class CreateTransactionsDetailsTable extends Migration
+class CreateTransactionDetailsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -16,7 +15,7 @@ class CreateTransactionsDetailsTable extends Migration
     {
         Schema::create('transaction_details', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('transaction_id');
+            $table->integer('transactions_id');
             $table->string('username');
             $table->string('nationality');
             $table->boolean('is_visa');
